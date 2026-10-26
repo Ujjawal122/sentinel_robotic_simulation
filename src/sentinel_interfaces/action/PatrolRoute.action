@@ -1,0 +1,14 @@
+# GOAL: what the mission manager asks for
+string[] checkpoint_names     # ordered list of checkpoints to visit
+bool loop                     # repeat the route when finished?
+---
+# RESULT: sent once when the action ends
+bool success
+uint32 checkpoints_completed
+string message                # e.g. "Completed" or "Aborted: path blocked"
+---
+# FEEDBACK: sent repeatedly while running
+string current_checkpoint
+uint32 checkpoints_done
+uint32 checkpoints_total
+float32 distance_remaining    # metres to the current checkpoint
