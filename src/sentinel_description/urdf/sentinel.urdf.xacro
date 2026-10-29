@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<robot name="sentinel" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Core Inertial Formulas -->
+  <xacro:include filename="inertial_macros.xacro"/>
+
+  <!-- Mobile Robot Chassis, Wheels, and Kinematics -->
+  <xacro:include filename="chassis.xacro"/>
+
+  <!-- Sensors -->
+  <xacro:include filename="lidar.xacro"/>
+  <xacro:include filename="camera.xacro"/>
+  <xacro:include filename="imu.xacro"/>
+
+  <!-- Gazebo Simulation Plugins -->
+  <xacro:include filename="gazebo.xacro"/>
+
+</robot>
+
